@@ -1,0 +1,30 @@
+.collapsibleSideBarParent,
+.uploading {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.collapsibleSideBarParent {
+  flex: 1;
+  gap: 42px;
+  max-width: 100%;
+}
+.uploading {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-100);
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1325px) {
+  .collapsibleSideBarParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .collapsibleSideBarParent {
+    gap: var(--gap-2xl);
+  }
+}

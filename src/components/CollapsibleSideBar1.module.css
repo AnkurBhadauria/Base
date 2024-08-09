@@ -1,0 +1,306 @@
+.subtractIcon {
+  height: 100%;
+  width: 42px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+}
+.subtractIcon1 {
+  height: 42px;
+  width: 42px;
+  position: relative;
+  z-index: 1;
+}
+.base {
+  text-decoration: none;
+  position: relative;
+  font-weight: 600;
+  color: inherit;
+  display: inline-block;
+  min-width: 54px;
+}
+.logoAndCompany,
+.logoContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.logoContainer {
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+}
+.logoAndCompany {
+  flex-direction: row;
+  position: relative;
+  gap: var(--gap-mini);
+}
+.sideBarExpand {
+  margin: 0;
+  height: 35px;
+  width: 28px;
+}
+.sideBarContent,
+.sideBarItems {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.sideBarItems {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.sideBarContent {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-7xl) 0 var(--padding-12xl);
+}
+.iconlyboldcategory {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  object-fit: cover;
+  min-height: 24px;
+}
+.dashboard1 {
+  text-decoration: none;
+  position: relative;
+  font-weight: 600;
+  color: inherit;
+  display: inline-block;
+  min-width: 80px;
+}
+.dashboardContent,
+.dashboardIconLabel,
+.dashboardLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dashboardLabel {
+  flex-direction: column;
+  padding: var(--padding-12xs) 0 0;
+}
+.dashboardContent,
+.dashboardIconLabel {
+  flex-direction: row;
+}
+.dashboardIconLabel {
+  gap: var(--gap-sm);
+}
+.dashboardContent {
+  padding: 0 var(--padding-12xl);
+}
+.itemDivider {
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+  border-radius: 0 var(--br-8xs) var(--br-8xs) 0;
+  background: linear-gradient(
+    90deg,
+    rgba(172, 169, 255, 0.18),
+    rgba(172, 169, 255, 0)
+  );
+}
+.dashboard {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  z-index: 1;
+}
+.chart,
+.upload {
+  position: relative;
+}
+.chart {
+  margin: 0;
+  height: 22px;
+  width: 20px;
+  min-height: 22px;
+}
+.upload {
+  font-weight: 600;
+  display: inline-block;
+  min-width: 54px;
+}
+.analytics {
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.analytics,
+.analyticsItem,
+.dashboardItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.analyticsItem {
+  flex-direction: row;
+  padding: 0 var(--padding-14xl);
+  margin-top: -35px;
+  color: var(--color-mediumslateblue-300);
+}
+.dashboardItem {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: column;
+  color: var(--color-dimgray);
+}
+.iconlyboldticket {
+  width: 24px;
+  height: 16.4px;
+  position: relative;
+  object-fit: cover;
+}
+.invoiceIconLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs-6) 0 0;
+}
+.invoice1 {
+  position: relative;
+  line-height: 13.6px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 51px;
+}
+.iconlybolddocument {
+  height: 26.4px;
+  width: 24px;
+  position: relative;
+  object-fit: cover;
+  min-height: 26px;
+}
+.schedule1 {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 68px;
+}
+.scheduleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+}
+.calendar {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 66px;
+}
+.messagesWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs-2);
+}
+.calendarParent,
+.frameWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.calendarParent {
+  align-items: flex-end;
+  gap: var(--gap-sm);
+}
+.frameWrapper {
+  align-items: flex-start;
+}
+.notification1 {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 85px;
+}
+.notificationWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs-9) 0 0;
+}
+.settings1 {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 61px;
+}
+.settingsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs-3) 0 0;
+}
+.menuName {
+  align-self: stretch;
+  flex: 1;
+  align-items: flex-start;
+  gap: var(--gap-20xl-9);
+  font-size: var(--font-size-base);
+  color: var(--color-gray-800);
+}
+.collapsibleSideBar,
+.menuName,
+.sideBarContentParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.sideBarContentParent {
+  align-self: stretch;
+  flex: 1;
+  align-items: flex-end;
+  gap: var(--gap-31xl);
+}
+.collapsibleSideBar {
+  height: 1024px;
+  width: 285px;
+  background-color: var(--color-gray-600);
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: flex-start;
+  padding: var(--padding-32xl) 0 var(--padding-15xl);
+  box-sizing: border-box;
+  gap: var(--gap-363xl);
+  text-align: left;
+  font-size: var(--paragraph-ui-type-text-2xl-s-size);
+  color: var(--light-gohan);
+  font-family: var(--font-nunito);
+}
+@media screen and (max-width: 1125px) {
+  .collapsibleSideBar {
+    padding-top: var(--padding-14xl);
+    padding-bottom: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .base {
+    font-size: var(--font-size-lgi);
+  }
+  .menuName {
+    gap: var(--gap-xl);
+  }
+  .sideBarContentParent {
+    gap: var(--gap-6xl);
+  }
+  .collapsibleSideBar {
+    gap: var(--gap-172xl);
+    padding-top: var(--padding-2xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

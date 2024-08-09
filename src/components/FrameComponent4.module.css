@@ -1,0 +1,253 @@
+.signIn {
+  margin: 0;
+  width: 143.8px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+}
+.signInTo {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-lato);
+}
+.signInForm {
+  width: 176.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-6xs-6);
+  box-sizing: border-box;
+  gap: var(--gap-3xs-8);
+  text-align: left;
+  color: var(--light-gohan);
+}
+.googleIcon1,
+.signInWith {
+  position: relative;
+  z-index: 1;
+}
+.googleIcon1 {
+  height: 15.4px;
+  width: 15.4px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.signInWith {
+  flex: 1;
+  display: inline-block;
+  min-width: 129.5px;
+}
+.googleSignIn {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-4xs-8) var(--padding-xl) var(--padding-5xs-6);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-2xs);
+  min-width: 129px;
+  flex-shrink: 0;
+}
+.apple1Icon,
+.signInWith1 {
+  position: relative;
+  z-index: 1;
+}
+.apple1Icon {
+  height: 15.4px;
+  width: 12.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.signInWith1 {
+  align-self: stretch;
+  display: inline-block;
+  min-width: 120.8px;
+}
+.authOptions,
+.googleSignIn1,
+.signInWithAppleWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.signInWithAppleWrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-11xs-1) 0 0;
+}
+.authOptions,
+.googleSignIn1 {
+  flex-direction: row;
+}
+.googleSignIn1 {
+  flex: 0.9239;
+  padding: var(--padding-5xs-7) var(--padding-7xl) var(--padding-5xs-6);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-xs-5);
+  min-width: 129px;
+  flex-shrink: 0;
+}
+.authOptions {
+  align-self: stretch;
+  padding: 0 0 var(--padding-7xs-6);
+  gap: var(--gap-8xl-4);
+  font-size: var(--font-size-xs);
+}
+.emailAddress,
+.johndoegmailcom {
+  display: inline-block;
+  font-family: var(--font-lato);
+  font-size: var(--font-size-base);
+  color: var(--light-gohan);
+  text-align: left;
+}
+.emailAddress {
+  position: relative;
+  min-width: 105.4px;
+  z-index: 1;
+}
+.johndoegmailcom {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 11px;
+  left: 16.5px;
+  font-weight: 700;
+  height: 20.9px;
+  white-space: nowrap;
+  padding: 0;
+  z-index: 2;
+}
+.emailAndPassword,
+.inputFields {
+  align-self: stretch;
+  max-width: 100%;
+}
+.inputFields {
+  height: 43.9px;
+  position: relative;
+}
+.emailAndPassword {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-2xs-9);
+}
+.forgotPassword {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-lato);
+  color: var(--color-cornflowerblue-200);
+  text-align: left;
+  z-index: 1;
+}
+.forgotPasswordLink {
+  width: 138.2px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-12xs);
+  box-sizing: border-box;
+}
+.signIn1 {
+  position: absolute;
+  top: 9.9px;
+  left: 123.6px;
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-montserrat);
+  color: var(--color-gray-600);
+  text-align: center;
+  width: 111.9px;
+  height: 23.8px;
+  z-index: 1;
+}
+.buttonSignIn,
+.credentials {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+}
+.buttonSignIn {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 43.9px;
+  z-index: 1;
+}
+.credentials {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-13xl-9) var(--padding-13xl) var(--padding-14xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xl);
+}
+.registerHere {
+  color: var(--color-royalblue-200);
+}
+.dontHaveAnContainer {
+  flex: 1;
+  position: relative;
+}
+.dontHaveAnAccountRegisteWrapper,
+.signInFormParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dontHaveAnAccountRegisteWrapper {
+  flex-direction: row;
+  padding: 0 var(--padding-49xl);
+  font-size: var(--font-size-base);
+  font-family: var(--font-lato);
+}
+.signInFormParent {
+  flex-direction: column;
+  gap: var(--gap-2xl-9);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 750px) {
+  .signIn {
+    font-size: var(--font-size-10xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .signIn {
+    font-size: var(--font-size-3xl);
+  }
+  .googleSignIn1 {
+    flex: 1;
+  }
+  .authOptions {
+    flex-wrap: wrap;
+  }
+  .dontHaveAnAccountRegisteWrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

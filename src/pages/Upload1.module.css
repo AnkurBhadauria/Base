@@ -1,0 +1,23 @@
+.upload {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-500);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 43px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1325px) {
+  .upload {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .upload {
+    gap: var(--gap-2xl);
+  }
+}

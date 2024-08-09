@@ -1,0 +1,132 @@
+.title {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+}
+.menuItem {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--light-goku);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  white-space: nowrap;
+}
+.radioButton {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  display: none;
+}
+.menuItem1 {
+  border-radius: var(--br-5xs);
+  background-color: var(--light-gohan);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  gap: var(--gap-5xs);
+}
+.menuItem1,
+.menuItem2,
+.title5 {
+  align-self: stretch;
+  display: flex;
+}
+.menuItem2 {
+  border-radius: var(--br-5xs);
+  background-color: var(--light-gohan);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  white-space: nowrap;
+}
+.title5 {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  align-items: center;
+}
+.circle,
+.menuItem5 {
+  box-sizing: border-box;
+}
+.menuItem5 {
+  align-self: stretch;
+  height: 40px;
+  border-radius: var(--br-5xs);
+  background-color: var(--light-gohan);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  white-space: nowrap;
+}
+.circle {
+  position: absolute;
+  height: 66.67%;
+  width: 66.67%;
+  top: 16.67%;
+  right: 16.67%;
+  bottom: 16.67%;
+  left: 16.67%;
+  border-radius: var(--br-56xl);
+  border: 0.8px solid var(--light-trunks);
+}
+.radioButton1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.menuItem10,
+.popover {
+  background-color: var(--light-gohan);
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.menuItem10 {
+  width: 284px;
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-5xs);
+  gap: var(--gap-5xs);
+  font-family: var(--font-actor);
+}
+.popover {
+  width: 150px;
+  height: 205px;
+  position: relative;
+  box-shadow: var(--light-shadow-lg);
+  border-radius: var(--br-xs);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-5xs) var(--padding-5xs) var(--padding-6xl);
+  gap: var(--gap-9xs);
+  line-height: normal;
+  letter-spacing: normal;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--light-bulma);
+  font-family: var(--paragraph-ui-type-text-2xl-s);
+}

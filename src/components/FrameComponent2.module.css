@@ -1,0 +1,229 @@
+.uploadCsv {
+  text-decoration: none;
+  position: relative;
+  line-height: 32px;
+  font-weight: 600;
+  color: inherit;
+}
+.button {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-600);
+  display: none;
+}
+.white {
+  height: 32.9px;
+  width: 197.6px;
+  position: relative;
+  display: none;
+}
+.vectorIcon {
+  width: 18px;
+  height: 23px;
+  position: relative;
+}
+.uploadButtonIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs);
+}
+.maskGroupIcon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  object-fit: cover;
+}
+.uploadButton,
+.uploadInner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-8xl-6);
+}
+.uploadInner {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-12xs-5) 0 var(--padding-12xs-4);
+  gap: var(--gap-xl);
+}
+.placeholderTopIcon {
+  height: 36px;
+  width: 36px;
+  position: relative;
+}
+.inputFieldTop {
+  width: 364px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.placeholderText {
+  position: relative;
+  line-height: 24px;
+}
+.inputFieldsChild {
+  width: 564px;
+  height: 258px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  border: 1px dashed var(--color-gray-900);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.placeholderText1 {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 52px;
+}
+.placeholderTextWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-9xs) var(--padding-137xl) var(--padding-xs);
+  z-index: 2;
+  font-size: var(--font-size-sm);
+  color: var(--color-firebrick-100);
+}
+.inputFields {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  border: 1px dashed var(--color-gray-900);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-50xl) var(--padding-79xl) var(--padding-38xl) 0;
+  gap: var(--gap-sm);
+  max-width: 100%;
+  z-index: 1;
+}
+.inputIconShape {
+  height: 19px;
+  width: 19px;
+  position: relative;
+  border-radius: var(--br-81xl);
+  border: 2px solid var(--light-gohan);
+  box-sizing: border-box;
+}
+.sizemdIconleftTypeprima {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-mediumslateblue-300);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-lg-5) var(--padding-xl);
+  cursor: pointer;
+}
+.inputContainer,
+.inputContainerWrapper {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.inputContainer {
+  width: 596px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-600);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  gap: var(--gap-2xl);
+}
+.inputContainerWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--light-trunks);
+}
+.uploadContent,
+.uploadContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.uploadContent {
+  align-self: stretch;
+  gap: var(--gap-119xl);
+  max-width: 100%;
+}
+.uploadContentWrapper {
+  flex: 1;
+  padding: var(--padding-28xl) 0 0;
+  box-sizing: border-box;
+  max-width: calc(100% - 325px);
+  text-align: left;
+  font-size: var(--paragraph-ui-type-text-2xl-s-size);
+  color: var(--light-gohan);
+  font-family: var(--paragraph-ui-type-text-2xl-s);
+}
+@media screen and (max-width: 1050px) {
+  .uploadContent {
+    gap: var(--gap-50xl);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .uploadContentWrapper {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 725px) {
+  .inputFields {
+    padding-right: var(--padding-30xl);
+    box-sizing: border-box;
+  }
+  .uploadContent {
+    gap: var(--gap-15xl);
+  }
+  .uploadContentWrapper {
+    padding-top: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .uploadCsv {
+    font-size: var(--font-size-lgi);
+    line-height: 26px;
+  }
+  .uploadInner {
+    flex-wrap: wrap;
+  }
+  .placeholderTextWrapper {
+    gap: var(--gap-11xl);
+    padding-left: var(--padding-xl);
+  }
+  .inputFields,
+  .placeholderTextWrapper {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .uploadContent {
+    gap: var(--gap-mid);
+  }
+}

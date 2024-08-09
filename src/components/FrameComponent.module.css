@@ -1,0 +1,112 @@
+.inputCursorIcon {
+  height: 36px;
+  width: 36px;
+  position: relative;
+}
+.inputCursorWrapper {
+  width: 267px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.browse {
+  color: var(--color-mediumslateblue-300);
+}
+.placeholderText {
+  position: relative;
+  line-height: 24px;
+}
+.inputFieldChild {
+  width: 564px;
+  height: 258px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  border: 1px dashed var(--light-beerus-hover);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.inputFieldItem {
+  width: 464px;
+  display: none;
+  max-width: 100%;
+}
+.inputField {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  border: 1px dashed var(--light-beerus-hover);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-77xl) var(--padding-xl) var(--padding-63xl)
+    var(--padding-2xl);
+  gap: var(--gap-base);
+  max-width: 100%;
+  z-index: 1;
+}
+.icon,
+.value {
+  position: relative;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+  min-height: 24px;
+}
+.value {
+  font-size: var(--font-size-sm);
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--paragraph-ui-type-text-2xl-s);
+  color: var(--light-gohan);
+  text-align: left;
+  display: inline-block;
+  min-width: 46px;
+}
+.sizemdIconleftTypeprima {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-xl);
+  background-color: var(--color-mediumslateblue-300);
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xs);
+  opacity: 0.4;
+}
+.sizemdIconleftTypeprima:hover {
+  background-color: var(--color-mediumslateblue-100);
+}
+.inputContainer,
+.inputContainerWrapper {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.inputContainer {
+  width: 596px;
+  border-radius: var(--br-5xs);
+  background-color: var(--light-gohan);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  gap: var(--gap-2xl);
+}
+.inputContainerWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--light-trunks);
+  font-family: var(--paragraph-ui-type-text-2xl-s);
+}

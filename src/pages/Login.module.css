@@ -1,0 +1,164 @@
+.iconOne {
+  width: 35.2px;
+  height: 35.2px;
+  position: relative;
+  object-fit: cover;
+}
+.firstIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-11xs-6);
+}
+.iconTwo {
+  width: 33.6px;
+  height: 32.8px;
+  position: relative;
+  object-fit: cover;
+}
+.secondIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs-8);
+}
+.linkedInIcon {
+  position: absolute;
+  height: 74.74%;
+  width: 75%;
+  top: 12.5%;
+  right: 12.5%;
+  bottom: 12.76%;
+  left: 12.5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.carbonlogoLinkedin {
+  height: 38.4px;
+  width: 38.4px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.discordOneIcon,
+.discordTwoIcon {
+  position: absolute;
+  height: 9.11%;
+  width: 24%;
+  top: 46.61%;
+  right: 38.25%;
+  bottom: 44.27%;
+  left: 37.75%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.discordTwoIcon {
+  height: 81.25%;
+  width: 71%;
+  top: 12.5%;
+  right: 14.5%;
+  bottom: 6.25%;
+  left: 14.5%;
+  z-index: 1;
+}
+.carbonlogoDiscord {
+  height: 38.4px;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icons,
+.social {
+  display: flex;
+  flex-direction: row;
+}
+.icons {
+  width: 239.2px;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.social {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+}
+.form,
+.formContainer,
+.login {
+  display: flex;
+  justify-content: flex-start;
+}
+.form {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-119xl);
+  max-width: 100%;
+}
+.formContainer,
+.login {
+  box-sizing: border-box;
+}
+.formContainer {
+  width: 422.6px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-103xl);
+  min-width: 422.6px;
+  min-height: 853px;
+  max-width: 100%;
+}
+.login {
+  width: 100%;
+  position: relative;
+  background-color: var(--light-goku);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: var(--padding-5xl) var(--padding-13xl);
+  gap: var(--gap-121xl-7);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1275px) {
+  .formContainer {
+    flex: 1;
+  }
+  .login {
+    flex-wrap: wrap;
+    gap: var(--gap-51xl);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .formContainer {
+    padding-bottom: var(--padding-60xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .formContainer {
+    min-width: 100%;
+  }
+  .login {
+    gap: var(--gap-16xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .form {
+    gap: var(--gap-50xl);
+  }
+  .formContainer {
+    padding-bottom: var(--padding-32xl);
+    box-sizing: border-box;
+  }
+  .login {
+    gap: var(--gap-lg);
+  }
+}

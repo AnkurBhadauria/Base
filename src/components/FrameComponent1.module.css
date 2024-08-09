@@ -1,0 +1,210 @@
+.uploadCsv {
+  text-decoration: none;
+  position: relative;
+  line-height: 32px;
+  font-weight: 600;
+  color: inherit;
+  white-space: nowrap;
+}
+.button {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-600);
+  display: none;
+}
+.white {
+  height: 32.9px;
+  width: 197.6px;
+  position: relative;
+  display: none;
+}
+.uploadImageIcon1 {
+  width: 18px;
+  height: 23px;
+  position: relative;
+}
+.uploadImageIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs);
+}
+.maskGroupIcon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  object-fit: cover;
+}
+.uploadButton,
+.uploadHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-8xl-6);
+}
+.uploadHeader {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-12xs-5) 0 var(--padding-12xs-4);
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--paragraph-ui-type-text-2xl-s-size);
+  color: var(--color-black);
+  font-family: var(--paragraph-ui-type-text-2xl-s);
+}
+.inputPaddingIcon {
+  height: 36px;
+  width: 36px;
+  position: relative;
+}
+.inputPadding {
+  width: 267px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.browse {
+  color: var(--color-mediumslateblue-300);
+}
+.placeholderText {
+  position: relative;
+  line-height: 24px;
+}
+.inputFieldChild {
+  width: 564px;
+  height: 258px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  border: 1px dashed var(--light-beerus-hover);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.inputFieldItem {
+  width: 464px;
+  display: none;
+  max-width: 100%;
+}
+.inputField {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  border: 1px dashed var(--light-beerus-hover);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-77xl) var(--padding-xl) var(--padding-63xl)
+    var(--padding-2xl);
+  gap: var(--gap-base);
+  max-width: 100%;
+  z-index: 1;
+}
+.icon,
+.value {
+  position: relative;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+  min-height: 24px;
+}
+.value {
+  font-size: var(--font-size-sm);
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--paragraph-ui-type-text-2xl-s);
+  color: var(--light-gohan);
+  text-align: left;
+  display: inline-block;
+  min-width: 46px;
+}
+.sizemdIconleftTypeprima {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-xl);
+  background-color: var(--color-mediumslateblue-300);
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.sizemdIconleftTypeprima:hover {
+  background-color: var(--color-mediumslateblue-100);
+}
+.inputContainer,
+.inputContainerWrapper {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.inputContainer {
+  width: 596px;
+  border-radius: var(--br-5xs);
+  background-color: var(--light-gohan);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  gap: var(--gap-2xl);
+}
+.inputContainerWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.uploadContent,
+.uploadContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.uploadContent {
+  align-self: stretch;
+  gap: var(--gap-119xl);
+}
+.uploadContentWrapper {
+  width: 1065px;
+  padding: var(--padding-27xl) 0 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--light-trunks);
+  font-family: var(--paragraph-ui-type-text-2xl-s);
+}
+@media screen and (max-width: 1125px) {
+  .uploadContent {
+    gap: var(--gap-50xl);
+  }
+}
+@media screen and (max-width: 800px) {
+  .uploadContent {
+    gap: var(--gap-15xl);
+  }
+  .uploadContentWrapper {
+    padding-top: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .uploadContent {
+    gap: var(--gap-mid);
+  }
+}

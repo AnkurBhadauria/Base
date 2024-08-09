@@ -1,0 +1,33 @@
+.main,
+.uploading {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.main {
+  flex: 1;
+  padding: 0 40px 0 0;
+  box-sizing: border-box;
+  gap: 40px;
+  max-width: 100%;
+}
+.uploading {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-500);
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1000px) {
+  .main {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 725px) {
+  .main {
+    gap: var(--gap-xl);
+  }
+}
