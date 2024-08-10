@@ -1,9 +1,8 @@
-import { FunctionComponent } from "react";
 import Main from "../components/Main";
 import Credentials from "../components/Credentials";
 import styles from "./Login.module.css";
 
-const Login: FunctionComponent = () => {
+const Login = () => {
   return (
     <div className={styles.login}>
       <Main />
@@ -17,7 +16,7 @@ const Login: FunctionComponent = () => {
                   className={styles.iconOne}
                   loading="lazy"
                   alt=""
-                  src="/vector1@2x.png"
+                  src="/vector@2x.png"
                 />
               </div>
               <div className={styles.secondIcon}>

@@ -1,23 +1,17 @@
-import { FunctionComponent, useCallback } from "react";
+import { useCallback } from "react";
+import { Button } from "@mui/material";
 import White from "./White";
 import Card from "./Card";
 import InputField from "./InputField";
-import PasswordInput from "./PasswordInput";
 import { useNavigate } from "react-router-dom";
-import ButtonPrimary from "./ButtonPrimary";
+import PropTypes from "prop-types";
 import styles from "./Credentials.module.css";
 
-export type CredentialsType = {
-  className?: string;
-};
-
-const Credentials: FunctionComponent<CredentialsType> = ({
-  className = "",
-}) => {
+const Credentials = ({ className = "" }) => {
   const navigate = useNavigate();
 
   const onButtonSignInClick = useCallback(() => {
-    navigate("/upload1");
+    navigate("/upload");
   }, [navigate]);
 
   return (
@@ -33,12 +27,12 @@ const Credentials: FunctionComponent<CredentialsType> = ({
             className={styles.googleIcon1}
             loading="lazy"
             alt=""
-            src="/googleicon-11@2x.png"
+            src="/googleicon-1@2x.png"
           />
           <b className={styles.signInWith}>Sign in with Google</b>
         </div>
         <div className={styles.appleSignIn}>
-          <White propBackgroundColor="#fff" />
+          <White />
           <img
             className={styles.apple1Icon}
             loading="lazy"
@@ -59,14 +53,38 @@ const Credentials: FunctionComponent<CredentialsType> = ({
             <b className={styles.johndoegmailcom}>johndoe@gmail.com</b>
           </div>
         </div>
-        <PasswordInput />
+        <div className={styles.emailInput}>
+          <b className={styles.password}>Password</b>
+          <div className={styles.passwordField}>
+            <div className={styles.input} />
+            <div className={styles.passwordValue}>
+              <b className={styles.b}>••••••••</b>
+              <div className={styles.separatorWrapper}>
+                <div className={styles.separator} />
+              </div>
+            </div>
+          </div>
+        </div>
         <div className={styles.forgotPassword}>
           <b className={styles.forgotPassword1}>Forgot password?</b>
         </div>
-        <button className={styles.buttonSignIn} onClick={onButtonSignInClick}>
-          <ButtonPrimary />
-          <b className={styles.signIn1}>Sign In</b>
-        </button>
+        <Button
+          className={styles.buttonSignIn}
+          disableElevation
+          variant="contained"
+          sx={{
+            textTransform: "none",
+            color: "#fff",
+            fontSize: "16",
+            background: "#605bff",
+            borderRadius: "0px 0px 0px 0px",
+            "&:hover": { background: "#605bff" },
+            height: 43.9,
+          }}
+          onClick={onButtonSignInClick}
+        >
+          Sign In
+        </Button>
       </form>
       <div className={styles.register}>
         <b className={styles.dontHaveAnContainer}>
@@ -76,6 +94,10 @@ const Credentials: FunctionComponent<CredentialsType> = ({
       </div>
     </div>
   );
+};
+
+Credentials.propTypes = {
+  className: PropTypes.string,
 };
 
 export default Credentials;

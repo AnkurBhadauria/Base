@@ -1,9 +1,20 @@
 .main,
-.upload {
+.upload,
+.uploadContainerWrapper {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+}
+.uploadContainerWrapper {
+  width: 1065px;
+  flex-direction: column;
+  padding: 46px 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.main,
+.upload {
+  flex-direction: row;
 }
 .main {
   flex: 1;
@@ -13,7 +24,7 @@
 .upload {
   width: 100%;
   position: relative;
-  background-color: var(--color-gray-100);
+  background-color: #fafafb;
   overflow: hidden;
   line-height: normal;
   letter-spacing: normal;
@@ -24,6 +35,10 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .uploadContainerWrapper {
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
   .main {
     gap: var(--gap-3xl);
   }

@@ -1,132 +1,26 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
 import ThemeSwitch from "./ThemeSwitch";
+import PropTypes from "prop-types";
 import styles from "./CollapsibleSideBar.module.css";
 
-export type CollapsibleSideBarType = {
-  className?: string;
-
-  /** Style props */
-  companyNameHeight?: CSSProperties["height"];
-  companyNamePosition?: CSSProperties["position"];
-  companyNameMargin?: CSSProperties["margin"];
-  companyNameTop?: CSSProperties["top"];
-  companyNameBottom?: CSSProperties["bottom"];
-  companyNameLeft?: CSSProperties["left"];
-  companyNameMaxHeight?: CSSProperties["maxHeight"];
-  baseHeight?: CSSProperties["height"];
-  basePosition?: CSSProperties["position"];
-  baseMargin?: CSSProperties["margin"];
-  baseTop?: CSSProperties["top"];
-  baseBottom?: CSSProperties["bottom"];
-  baseLeft?: CSSProperties["left"];
-  baseMaxHeight?: CSSProperties["maxHeight"];
-  groupDivTextDecoration?: CSSProperties["textDecoration"];
-  notificationTextDecoration?: CSSProperties["textDecoration"];
-  themeSwitchTextDecoration?: CSSProperties["textDecoration"];
-};
-
-const CollapsibleSideBar: FunctionComponent<CollapsibleSideBarType> = ({
-  className = "",
-  companyNameHeight,
-  companyNamePosition,
-  companyNameMargin,
-  companyNameTop,
-  companyNameBottom,
-  companyNameLeft,
-  companyNameMaxHeight,
-  baseHeight,
-  basePosition,
-  baseMargin,
-  baseTop,
-  baseBottom,
-  baseLeft,
-  baseMaxHeight,
-  groupDivTextDecoration,
-  notificationTextDecoration,
-  themeSwitchTextDecoration,
-}) => {
-  const subtractIconStyle: CSSProperties = useMemo(() => {
-    return {
-      height: companyNameHeight,
-      position: companyNamePosition,
-      margin: companyNameMargin,
-      top: companyNameTop,
-      bottom: companyNameBottom,
-      left: companyNameLeft,
-      maxHeight: companyNameMaxHeight,
-    };
-  }, [
-    companyNameHeight,
-    companyNamePosition,
-    companyNameMargin,
-    companyNameTop,
-    companyNameBottom,
-    companyNameLeft,
-    companyNameMaxHeight,
-  ]);
-
-  const subtractIcon1Style: CSSProperties = useMemo(() => {
-    return {
-      height: baseHeight,
-      position: basePosition,
-      margin: baseMargin,
-      top: baseTop,
-      bottom: baseBottom,
-      left: baseLeft,
-      maxHeight: baseMaxHeight,
-    };
-  }, [
-    baseHeight,
-    basePosition,
-    baseMargin,
-    baseTop,
-    baseBottom,
-    baseLeft,
-    baseMaxHeight,
-  ]);
-
-  const scheduleStyle: CSSProperties = useMemo(() => {
-    return {
-      textDecoration: groupDivTextDecoration,
-    };
-  }, [groupDivTextDecoration]);
-
-  const calendarStyle: CSSProperties = useMemo(() => {
-    return {
-      textDecoration: notificationTextDecoration,
-    };
-  }, [notificationTextDecoration]);
-
-  const settingsStyle: CSSProperties = useMemo(() => {
-    return {
-      textDecoration: themeSwitchTextDecoration,
-    };
-  }, [themeSwitchTextDecoration]);
-
+const CollapsibleSideBar = ({ className = "" }) => {
   return (
     <div className={[styles.collapsibleSideBar, className].join(" ")}>
-      <div className={styles.sideBarContainer}>
-        <div className={styles.sideBarElements}>
-          <div className={styles.sideBarElement}>
+      <div className={styles.sideBarTop}>
+        <div className={styles.sideBarTopLeft}>
+          <div className={styles.sideBarBrandContainer}>
             <div className={styles.logoAndCompany}>
-              <img
-                className={styles.subtractIcon}
-                alt=""
-                src="/subtract1.svg"
-                style={subtractIconStyle}
-              />
+              <img className={styles.subtractIcon} alt="" src="/subtract.svg" />
               <img
                 className={styles.subtractIcon1}
                 loading="lazy"
                 alt=""
-                src="/subtract1.svg"
-                style={subtractIcon1Style}
+                src="/subtract.svg"
               />
-              <div className={styles.companyName}>
+              <div className={styles.brandNameContainer}>
                 <a className={styles.base}>Base</a>
               </div>
             </div>
-            <div className={styles.sideBarIcon}>
+            <div className={styles.sideBarToggle}>
               <img
                 className={styles.tablerIconLayoutSidebarLef}
                 loading="lazy"
@@ -137,9 +31,9 @@ const CollapsibleSideBar: FunctionComponent<CollapsibleSideBarType> = ({
           </div>
         </div>
         <div className={styles.menuName}>
-          <div className={styles.dashboardParent}>
+          <div className={styles.menuItemDashboard}>
             <div className={styles.dashboard}>
-              <div className={styles.dashboardContent}>
+              <div className={styles.dashboardItemIconContainer}>
                 <div className={styles.iconlyboldcategoryParent}>
                   <img
                     className={styles.iconlyboldcategory}
@@ -147,14 +41,14 @@ const CollapsibleSideBar: FunctionComponent<CollapsibleSideBarType> = ({
                     alt=""
                     src="/iconlyboldcategory@2x.png"
                   />
-                  <div className={styles.dashboardName}>
+                  <div className={styles.dashboardItemLabelContainer}>
                     <a className={styles.dashboard1}>Dashboard</a>
                   </div>
                 </div>
               </div>
               <div className={styles.separator} />
             </div>
-            <div className={styles.analyticsWrapper}>
+            <div className={styles.menuItemAnalytics}>
               <div className={styles.analytics}>
                 <img
                   className={styles.chartIcon}
@@ -162,100 +56,90 @@ const CollapsibleSideBar: FunctionComponent<CollapsibleSideBarType> = ({
                   alt=""
                   src="/chart@2x.png"
                 />
-                <div className={styles.upload}>Upload</div>
+                <a className={styles.upload}>Upload</a>
               </div>
             </div>
           </div>
-          <div className={styles.dashboardContent}>
+          <div className={styles.dashboardItemIconContainer}>
             <div className={styles.invoice}>
-              <div className={styles.invoiceIcon}>
+              <div className={styles.invoiceItemIconContainer}>
                 <img
                   className={styles.iconlyboldticket}
                   loading="lazy"
                   alt=""
-                  src="/iconlyboldticket1@2x.png"
+                  src="/iconlyboldticket@2x.png"
                 />
               </div>
               <div className={styles.invoice1}>Invoice</div>
             </div>
           </div>
-          <div className={styles.dashboardContent}>
+          <div className={styles.dashboardItemIconContainer}>
             <div className={styles.iconlyboldcategoryParent}>
               <img
                 className={styles.iconlybolddocument}
                 loading="lazy"
                 alt=""
-                src="/iconlybolddocument1@2x.png"
+                src="/iconlybolddocument@2x.png"
               />
-              <div className={styles.scheduleName}>
-                <div className={styles.schedule1} style={scheduleStyle}>
-                  Schedule
-                </div>
+              <div className={styles.scheduleItemLabelContainer}>
+                <a className={styles.schedule1}>Schedule</a>
               </div>
             </div>
           </div>
-          <div className={styles.dashboardContent}>
+          <div className={styles.dashboardItemIconContainer}>
             <div className={styles.frameWrapper}>
               <div className={styles.calendarParent}>
                 <img
                   className={styles.iconlybolddocument}
                   loading="lazy"
                   alt=""
-                  src="/calendar1@2x.png"
+                  src="/calendar@2x.png"
                 />
                 <div className={styles.messagesWrapper}>
                   <div className={styles.frameWrapper}>
-                    <div className={styles.calendar} style={calendarStyle}>
-                      Calendar
-                    </div>
+                    <a className={styles.calendar}>Calendar</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className={styles.dashboardContent}>
+          <div className={styles.dashboardItemIconContainer}>
             <div className={styles.iconlyboldcategoryParent}>
               <img
                 className={styles.iconlybolddocument}
                 loading="lazy"
                 alt=""
-                src="/iconlyboldnotification1@2x.png"
+                src="/iconlyboldnotification@2x.png"
               />
-              <div className={styles.notificationSettingsCount}>
+              <div className={styles.menuIconLabels}>
                 <div className={styles.notification1}>Notification</div>
               </div>
             </div>
           </div>
-          <div className={styles.dashboardContent}>
+          <div className={styles.dashboardItemIconContainer}>
             <div className={styles.iconlyboldcategoryParent}>
               <img
                 className={styles.iconlybolddocument}
                 loading="lazy"
                 alt=""
-                src="/iconlyboldsetting1@2x.png"
+                src="/iconlyboldsetting@2x.png"
               />
               <div className={styles.settingsWrapper}>
-                <div className={styles.settings1} style={settingsStyle}>
-                  Settings
-                </div>
+                <a className={styles.settings1}>Settings</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className={styles.dashboardContent}>
-        <ThemeSwitch
-          propBackgroundColor="#f2f2f2"
-          propBoxShadow="0px 6px 20px rgba(0, 0, 0, 0.03)"
-          propBackgroundColor1="#fff"
-          tablerIconSun="/tablericonsun1.svg"
-          propBoxShadow1="unset"
-          propBackgroundColor2="unset"
-          tablerIconMoon="/tablericonmoon1.svg"
-        />
+      <div className={styles.dashboardItemIconContainer}>
+        <ThemeSwitch />
       </div>
     </div>
   );
+};
+
+CollapsibleSideBar.propTypes = {
+  className: PropTypes.string,
 };
 
 export default CollapsibleSideBar;

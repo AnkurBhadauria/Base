@@ -1,4 +1,9 @@
 .subtractIcon {
+  height: 42px;
+  width: 42px;
+  position: relative;
+}
+.subtractIcon1 {
   height: 100%;
   width: 42px;
   position: absolute;
@@ -7,11 +12,6 @@
   bottom: 0;
   left: 0;
   max-height: 100%;
-}
-.subtractIcon1 {
-  height: 42px;
-  width: 42px;
-  position: relative;
   z-index: 1;
 }
 .base {
@@ -22,13 +22,13 @@
   display: inline-block;
   min-width: 54px;
 }
-.companyName,
+.brandNameContainer,
 .logoAndCompany {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.companyName {
+.brandNameContainer {
   flex-direction: column;
   padding: var(--padding-8xs) 0 0;
 }
@@ -44,25 +44,25 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-.sideBarIcon {
+.sideBarToggle {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-6xs) 0 0;
 }
-.sideBarElement,
-.sideBarElements {
+.sideBarBrandContainer,
+.sideBarTopLeft {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
-.sideBarElement {
+.sideBarBrandContainer {
   flex: 1;
   justify-content: space-between;
   gap: var(--gap-xl);
 }
-.sideBarElements {
+.sideBarTopLeft {
   align-self: stretch;
   justify-content: flex-end;
   padding: 0 var(--padding-7xl) 0 var(--padding-12xl);
@@ -82,25 +82,24 @@
   display: inline-block;
   min-width: 80px;
 }
-.dashboardContent,
-.dashboardName,
-.iconlyboldcategoryParent {
+.dashboardItemLabelContainer {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.dashboardName {
-  flex-direction: column;
   padding: var(--padding-12xs) 0 0;
 }
-.dashboardContent,
+.dashboardItemIconContainer,
 .iconlyboldcategoryParent {
+  display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .iconlyboldcategoryParent {
   gap: var(--gap-sm);
 }
-.dashboardContent {
+.dashboardItemIconContainer {
   padding: 0 var(--padding-12xl);
 }
 .separator {
@@ -131,8 +130,10 @@
   min-height: 22px;
 }
 .upload {
+  text-decoration: none;
   position: relative;
   font-weight: 600;
+  color: inherit;
   display: inline-block;
   min-width: 54px;
 }
@@ -141,19 +142,19 @@
   gap: var(--gap-base);
 }
 .analytics,
-.analyticsWrapper,
-.dashboardParent {
+.menuItemAnalytics,
+.menuItemDashboard {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.analyticsWrapper {
+.menuItemAnalytics {
   flex-direction: row;
   padding: 0 var(--padding-14xl);
   margin-top: -35px;
-  color: var(--color-mediumslateblue-200);
+  color: var(--color-mediumslateblue-100);
 }
-.dashboardParent {
+.menuItemDashboard {
   align-self: stretch;
   flex: 1;
   flex-direction: column;
@@ -165,7 +166,7 @@
   position: relative;
   object-fit: cover;
 }
-.invoiceIcon {
+.invoiceItemIconContainer {
   height: 13.6px;
   display: flex;
   flex-direction: column;
@@ -197,12 +198,14 @@
   min-height: 26px;
 }
 .schedule1 {
+  text-decoration: none;
   position: relative;
   font-weight: 600;
+  color: inherit;
   display: inline-block;
   min-width: 68px;
 }
-.scheduleName {
+.scheduleItemLabelContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -210,8 +213,10 @@
   padding: var(--padding-11xs) 0 0;
 }
 .calendar {
+  text-decoration: none;
   position: relative;
   font-weight: 600;
+  color: inherit;
   display: inline-block;
   min-width: 66px;
 }
@@ -241,7 +246,7 @@
   display: inline-block;
   min-width: 85px;
 }
-.notificationSettingsCount {
+.menuIconLabels {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -249,8 +254,10 @@
   padding: var(--padding-11xs-9) 0 0;
 }
 .settings1 {
+  text-decoration: none;
   position: relative;
   font-weight: 600;
+  color: inherit;
   display: inline-block;
   min-width: 61px;
 }
@@ -267,16 +274,16 @@
   align-items: flex-start;
   gap: var(--gap-20xl-9);
   font-size: var(--font-size-base);
-  color: var(--color-gray-700);
+  color: var(--color-gray-300);
 }
 .collapsibleSideBar,
 .menuName,
-.sideBarContainer {
+.sideBarTop {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.sideBarContainer {
+.sideBarTop {
   align-self: stretch;
   flex: 1;
   align-items: flex-end;
@@ -294,7 +301,7 @@
   gap: var(--gap-363xl);
   text-align: left;
   font-size: var(--paragraph-ui-type-text-2xl-s-size);
-  color: var(--color-gray-600);
+  color: var(--color-gray-200);
   font-family: var(--font-nunito);
 }
 @media screen and (max-width: 1125px) {
@@ -311,7 +318,7 @@
   .menuName {
     gap: var(--gap-xl);
   }
-  .sideBarContainer {
+  .sideBarTop {
     gap: var(--gap-6xl);
   }
   .collapsibleSideBar {

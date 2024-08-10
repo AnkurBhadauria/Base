@@ -1,28 +1,16 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import PropTypes from "prop-types";
 import styles from "./Card.module.css";
 
-export type CardType = {
-  className?: string;
-
-  /** Style props */
-  propBackgroundColor?: CSSProperties["backgroundColor"];
-};
-
-const Card: FunctionComponent<CardType> = ({
-  className = "",
-  propBackgroundColor,
-}) => {
-  const cardStyle: CSSProperties = useMemo(() => {
-    return {
-      backgroundColor: propBackgroundColor,
-    };
-  }, [propBackgroundColor]);
-
+const Card = ({ className = "" }) => {
   return (
     <div className={[styles.card, className].join(" ")}>
-      <div className={styles.card1} style={cardStyle} />
+      <div className={styles.card1} />
     </div>
   );
+};
+
+Card.propTypes = {
+  className: PropTypes.string,
 };
 
 export default Card;

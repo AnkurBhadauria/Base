@@ -5,7 +5,7 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-.icon {
+.themeSwitchIcons {
   height: 32px;
   width: 32px;
   box-shadow: var(--card-shadow);
@@ -16,15 +16,15 @@
   padding: var(--padding-4xs) var(--padding-7xs);
   box-sizing: border-box;
 }
-.icon,
-.icon1,
-.themeSwitch {
+.themeSwitch,
+.themeSwitchIcons,
+.themeSwitchIcons1 {
   border-radius: var(--br-4xl);
   overflow: hidden;
   display: flex;
   flex-direction: row;
 }
-.icon1 {
+.themeSwitchIcons1 {
   height: 32px;
   width: 32px;
   flex-shrink: 0;
@@ -34,11 +34,10 @@
   box-sizing: border-box;
 }
 .themeSwitch {
-  background-color: var(--common-minimal1);
+  background-color: var(--common-minimal);
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-9xs);
   gap: var(--gap-9xs);
   cursor: pointer;
-  z-index: 1;
 }

@@ -1,15 +1,11 @@
-import { FunctionComponent } from "react";
 import ThemeSwitch from "./ThemeSwitch";
+import PropTypes from "prop-types";
 import styles from "./Main.module.css";
 
-export type MainType = {
-  className?: string;
-};
-
-const Main: FunctionComponent<MainType> = ({ className = "" }) => {
+const Main = ({ className = "" }) => {
   return (
     <div className={[styles.main, className].join(" ")}>
-      <img className={styles.sideRightIcon} alt="" src="/side-right1@2x.png" />
+      <img className={styles.sideRightIcon} alt="" src="/side-right@2x.png" />
       <div className={styles.content}>
         <div className={styles.leftContent}>
           <img
@@ -21,12 +17,13 @@ const Main: FunctionComponent<MainType> = ({ className = "" }) => {
         </div>
         <a className={styles.base}>Base</a>
       </div>
-      <ThemeSwitch
-        tablerIconSun="/tablericonsun1.svg"
-        tablerIconMoon="/tablericonmoon1.svg"
-      />
+      <ThemeSwitch />
     </div>
   );
+};
+
+Main.propTypes = {
+  className: PropTypes.string,
 };
 
 export default Main;

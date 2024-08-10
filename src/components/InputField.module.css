@@ -3,7 +3,7 @@
   flex: 1;
   position: relative;
   border-radius: var(--br-3xs);
-  background-color: var(--light-goku);
+  background-color: var(--color-whitesmoke-100);
   max-width: 100%;
 }
 .inputField {

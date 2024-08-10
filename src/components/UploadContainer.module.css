@@ -1,0 +1,173 @@
+.uploadCsv {
+  text-decoration: none;
+  position: relative;
+  line-height: 32px;
+  font-weight: 600;
+  color: inherit;
+  white-space: nowrap;
+}
+.button {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-200);
+  display: none;
+}
+.white {
+  height: 32.9px;
+  width: 197.6px;
+  position: relative;
+  display: none;
+}
+.uploadImageIcon {
+  width: 18px;
+  height: 23px;
+  position: relative;
+}
+.inputIconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs);
+}
+.maskGroupIcon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  object-fit: cover;
+}
+.uploadHeader,
+.uploadInput {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-8xl-6);
+}
+.uploadHeader {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-12xs-5) 0 var(--padding-12xs-4);
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--paragraph-ui-type-text-2xl-s-size);
+  color: var(--color-black);
+  font-family: var(--paragraph-ui-type-text-2xl-s);
+}
+.inputPaddingIcon {
+  height: 36px;
+  width: 36px;
+  position: relative;
+}
+.inputPaddingWrapper {
+  width: 267px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.browse {
+  color: var(--color-mediumslateblue-200);
+}
+.placeholderText {
+  position: relative;
+  line-height: 24px;
+}
+.inputFieldContentChild {
+  width: 564px;
+  height: 258px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  border: 1px dashed var(--light-beerus-hover);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.inputFieldContentItem {
+  width: 464px;
+  display: none;
+  max-width: 100%;
+}
+.inputFieldContent {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  border: 1px dashed var(--light-beerus-hover);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-77xl) var(--padding-xl) var(--padding-63xl)
+    var(--padding-2xl);
+  gap: var(--gap-base);
+  max-width: 100%;
+  z-index: 1;
+}
+.sizemdIconleftTypeprima {
+  align-self: stretch;
+  height: 56px;
+  cursor: pointer;
+}
+.inputContainer,
+.inputField,
+.uploadContainer {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.inputContainer {
+  width: 596px;
+  border-radius: var(--br-5xs);
+  background-color: var(--light-gohan);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-2xl);
+}
+.inputField,
+.uploadContainer {
+  align-self: stretch;
+}
+.inputField {
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.uploadContainer {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-119xl);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray-100);
+  font-family: var(--paragraph-ui-type-text-2xl-s);
+}
+@media screen and (max-width: 1125px) {
+  .uploadContainer {
+    gap: var(--gap-50xl);
+  }
+}
+@media screen and (max-width: 800px) {
+  .uploadContainer {
+    gap: var(--gap-15xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .sizemdIconleftTypeprima {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .uploadContainer {
+    gap: var(--gap-mid);
+  }
+}
