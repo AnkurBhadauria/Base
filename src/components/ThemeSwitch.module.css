@@ -5,28 +5,28 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-.themeSwitchIcons {
+.themeIcons {
   height: 32px;
   width: 32px;
-  box-shadow: var(--card-shadow);
-  background-color: var(--light-gohan);
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
   padding: var(--padding-4xs) var(--padding-7xs);
   box-sizing: border-box;
 }
-.themeSwitch,
-.themeSwitchIcons,
-.themeSwitchIcons1 {
+.themeIcons,
+.themeIcons1,
+.themeSwitch {
   border-radius: var(--br-4xl);
   overflow: hidden;
   display: flex;
   flex-direction: row;
 }
-.themeSwitchIcons1 {
+.themeIcons1 {
   height: 32px;
   width: 32px;
+  box-shadow: var(--card-shadow);
+  background-color: var(--common-background);
   flex-shrink: 0;
   align-items: center;
   justify-content: center;

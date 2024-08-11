@@ -12,7 +12,7 @@ const ThemeSwitch = ({ className = "" }) => {
       className={[styles.themeSwitch, className].join(" ")}
       onClick={onThemeSwitchContainerClick}
     >
-      <div className={styles.themeSwitchIcons}>
+      <div className={styles.themeIcons}>
         <img
           className={styles.tablerIconSun}
           loading="lazy"
@@ -20,7 +20,7 @@ const ThemeSwitch = ({ className = "" }) => {
           src="/tablericonsun.svg"
         />
       </div>
-      <div className={styles.themeSwitchIcons1}>
+      <div className={styles.themeIcons1}>
         <img
           className={styles.tablerIconSun}
           loading="lazy"

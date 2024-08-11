@@ -1,112 +1,301 @@
-.inputCursorIcon {
-  height: 36px;
-  width: 36px;
+.signIn {
+  margin: 0;
+  width: 143.8px;
   position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
 }
-.inputCursorWrapper {
-  width: 267px;
+.signInTo {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-lato);
+}
+.signInForm {
+  width: 176.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-6xs-6);
+  box-sizing: border-box;
+  gap: var(--gap-3xs-8);
+  text-align: left;
+  color: var(--color-white);
+}
+.googleIcon1,
+.signInWith {
+  position: relative;
+  z-index: 1;
+}
+.googleIcon1 {
+  height: 15.4px;
+  width: 15.4px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.signInWith {
+  flex: 1;
+  display: inline-block;
+  min-width: 129.5px;
+}
+.googleSignIn {
+  flex: 1;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
-}
-.browse {
-  color: var(--color-mediumslateblue-300);
-}
-.placeholderText {
-  position: relative;
-  line-height: 24px;
-}
-.inputFieldChild {
-  width: 564px;
-  height: 258px;
-  position: relative;
-  border-radius: var(--br-5xs);
-  border: 1px dashed var(--light-beerus-hover);
+  justify-content: flex-start;
+  padding: var(--padding-4xs-8) var(--padding-xl) var(--padding-5xs-6);
   box-sizing: border-box;
-  display: none;
-  max-width: 100%;
+  position: relative;
+  gap: var(--gap-2xs);
+  min-width: 129px;
+  flex-shrink: 0;
 }
-.inputFieldItem {
-  width: 464px;
-  display: none;
-  max-width: 100%;
+.apple1Icon,
+.signInWith1 {
+  position: relative;
+  z-index: 1;
 }
-.inputField {
+.apple1Icon {
+  height: 15.4px;
+  width: 12.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.signInWith1 {
   align-self: stretch;
-  border-radius: var(--br-5xs);
-  border: 1px dashed var(--light-beerus-hover);
+  display: inline-block;
+  min-width: 120.8px;
+}
+.authOptions,
+.googleSignIn1,
+.signInWithAppleWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.signInWithAppleWrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-11xs-1) 0 0;
+}
+.authOptions,
+.googleSignIn1 {
+  flex-direction: row;
+}
+.googleSignIn1 {
+  flex: 0.9239;
+  padding: var(--padding-5xs-7) var(--padding-7xl) var(--padding-5xs-6);
   box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-xs-5);
+  min-width: 129px;
+  flex-shrink: 0;
+}
+.authOptions {
+  align-self: stretch;
+  padding: 0 0 var(--padding-7xs-6);
+  gap: var(--gap-8xl-4);
+  font-size: var(--font-size-xs);
+}
+.emailAddress,
+.johndoegmailcom {
+  display: inline-block;
+  font-family: var(--font-lato);
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  text-align: left;
+}
+.emailAddress {
+  position: relative;
+  min-width: 105.4px;
+  z-index: 1;
+}
+.johndoegmailcom {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 11px;
+  left: 16.5px;
+  font-weight: 700;
+  height: 20.9px;
+  white-space: nowrap;
+  padding: 0;
+  z-index: 2;
+}
+.emailAndPassword,
+.inputFields {
+  align-self: stretch;
+  max-width: 100%;
+}
+.inputFields {
+  height: 43.9px;
+  position: relative;
+}
+.emailAndPassword {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-77xl) var(--padding-xl) var(--padding-63xl)
-    var(--padding-2xl);
-  gap: var(--gap-base);
+  gap: var(--gap-2xs-9);
+}
+.password {
+  position: relative;
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-lato);
+  color: var(--color-white);
+  text-align: left;
+  min-width: 74.6px;
+  z-index: 1;
+}
+.input {
+  height: 43.9px;
+  width: 356.8px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-200);
+  display: none;
+  max-width: 100%;
+}
+.b,
+.passwordFieldChild {
+  position: relative;
+  z-index: 2;
+}
+.b {
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-lato);
+  color: var(--color-white);
+  text-align: left;
+  min-width: 82.3px;
+}
+.passwordFieldChild {
+  width: 1px;
+  height: 20.8px;
+  border-right: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+}
+.inputParent,
+.parent,
+.passwordField {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.passwordField {
+  height: 20.9px;
+  flex-direction: column;
+  padding: var(--padding-11xs-1) 0 0;
+  box-sizing: border-box;
+}
+.inputParent,
+.parent {
+  flex-direction: row;
+}
+.inputParent {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-200);
+  padding: var(--padding-2xs) var(--padding-base) var(--padding-xs);
+  box-sizing: border-box;
   max-width: 100%;
   z-index: 1;
 }
-.icon,
-.value {
+.forgotPassword {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-lato);
+  color: var(--color-cornflowerblue);
+  text-align: left;
+  z-index: 1;
+}
+.forgotPasswordLink {
+  width: 138.2px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-12xs);
+  box-sizing: border-box;
+}
+.buttonSignIn,
+.credentials {
+  align-self: stretch;
   position: relative;
 }
-.icon {
-  height: 24px;
-  width: 24px;
-  min-height: 24px;
-}
-.value {
-  font-size: var(--font-size-sm);
-  line-height: 24px;
-  font-weight: 600;
-  font-family: var(--paragraph-ui-type-text-2xl-s);
-  color: var(--light-gohan);
-  text-align: left;
-  display: inline-block;
-  min-width: 46px;
-}
-.sizemdIconleftTypeprima {
+.buttonSignIn {
+  height: 43.9px;
   cursor: pointer;
-  border: 0;
-  padding: var(--padding-base) var(--padding-xl);
-  background-color: var(--color-mediumslateblue-300);
-  align-self: stretch;
-  border-radius: var(--br-5xs);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-5xs);
-  opacity: 0.4;
+  z-index: 1;
 }
-.sizemdIconleftTypeprima:hover {
-  background-color: var(--color-mediumslateblue-100);
-}
-.inputContainer,
-.inputContainerWrapper {
+.credentials {
+  margin: 0;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-13xl-9) var(--padding-13xl) var(--padding-14xl);
   box-sizing: border-box;
+  gap: var(--gap-3xl);
   max-width: 100%;
 }
-.inputContainer {
-  width: 596px;
-  border-radius: var(--br-5xs);
-  background-color: var(--light-gohan);
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: var(--padding-base);
-  gap: var(--gap-2xl);
+.registerHere {
+  color: var(--color-royalblue);
 }
-.inputContainerWrapper {
+.dontHaveAnContainer {
+  flex: 1;
+  position: relative;
+}
+.dontHaveAnAccountRegisteWrapper,
+.signInFormParent {
   align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dontHaveAnAccountRegisteWrapper {
   flex-direction: row;
-  justify-content: center;
-  padding: 0 var(--padding-xl);
-  text-align: center;
+  padding: 0 var(--padding-49xl);
   font-size: var(--font-size-base);
-  color: var(--light-trunks);
-  font-family: var(--paragraph-ui-type-text-2xl-s);
+  font-family: var(--font-lato);
+}
+.signInFormParent {
+  flex-direction: column;
+  gap: var(--gap-2xl-9);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 750px) {
+  .signIn {
+    font-size: var(--font-size-10xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .signIn {
+    font-size: var(--font-size-3xl);
+  }
+  .googleSignIn1 {
+    flex: 1;
+  }
+  .authOptions {
+    flex-wrap: wrap;
+  }
+  .dontHaveAnAccountRegisteWrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
 }

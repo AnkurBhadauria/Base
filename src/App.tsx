@@ -6,7 +6,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import Login from "./pages/Login";
-import Upload from "./pages/Upload";
 
 function App() {
   const action = useNavigationType();
@@ -25,10 +24,6 @@ function App() {
 
     switch (pathname) {
       case "/":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/upload":
         title = "";
         metaDescription = "";
         break;
@@ -51,7 +46,6 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/upload" element={<Upload />} />
     </Routes>
   );
 }

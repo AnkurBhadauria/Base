@@ -1,9 +1,4 @@
 .subtractIcon {
-  height: 42px;
-  width: 42px;
-  position: relative;
-}
-.subtractIcon1 {
   height: 100%;
   width: 42px;
   position: absolute;
@@ -12,6 +7,11 @@
   bottom: 0;
   left: 0;
   max-height: 100%;
+}
+.subtractIcon1 {
+  height: 42px;
+  width: 42px;
+  position: relative;
   z-index: 1;
 }
 .base {
@@ -22,13 +22,13 @@
   display: inline-block;
   min-width: 54px;
 }
-.brandNameContainer,
-.logoAndCompany {
+.logoAndCompany,
+.logoContainer {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.brandNameContainer {
+.logoContainer {
   flex-direction: column;
   padding: var(--padding-8xs) 0 0;
 }
@@ -37,32 +37,23 @@
   position: relative;
   gap: var(--gap-mini);
 }
-.tablerIconLayoutSidebarLef {
+.sideBarExpand {
+  margin: 0;
+  height: 35px;
   width: 28px;
-  height: 28px;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
 }
-.sideBarToggle {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-6xs) 0 0;
-}
-.sideBarBrandContainer,
-.sideBarTopLeft {
+.sideBarContent,
+.sideBarItems {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
-.sideBarBrandContainer {
+.sideBarItems {
   flex: 1;
   justify-content: space-between;
   gap: var(--gap-xl);
 }
-.sideBarTopLeft {
+.sideBarContent {
   align-self: stretch;
   justify-content: flex-end;
   padding: 0 var(--padding-7xl) 0 var(--padding-12xl);
@@ -82,27 +73,28 @@
   display: inline-block;
   min-width: 80px;
 }
-.dashboardItemLabelContainer {
+.dashboardContent,
+.dashboardIconLabel,
+.dashboardLabel {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+}
+.dashboardLabel {
+  flex-direction: column;
   padding: var(--padding-12xs) 0 0;
 }
-.dashboardItemIconContainer,
-.iconlyboldcategoryParent {
-  display: flex;
+.dashboardContent,
+.dashboardIconLabel {
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
-.iconlyboldcategoryParent {
+.dashboardIconLabel {
   gap: var(--gap-sm);
 }
-.dashboardItemIconContainer {
+.dashboardContent {
   padding: 0 var(--padding-12xl);
 }
-.separator {
+.itemDivider {
   align-self: stretch;
   height: 48px;
   position: relative;
@@ -122,18 +114,18 @@
   gap: var(--gap-5xl);
   z-index: 1;
 }
-.chartIcon {
+.chart,
+.upload {
+  position: relative;
+}
+.chart {
+  margin: 0;
   height: 22px;
   width: 20px;
-  position: relative;
-  object-fit: cover;
   min-height: 22px;
 }
 .upload {
-  text-decoration: none;
-  position: relative;
   font-weight: 600;
-  color: inherit;
   display: inline-block;
   min-width: 54px;
 }
@@ -142,19 +134,19 @@
   gap: var(--gap-base);
 }
 .analytics,
-.menuItemAnalytics,
-.menuItemDashboard {
+.analyticsItem,
+.dashboardItem {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.menuItemAnalytics {
+.analyticsItem {
   flex-direction: row;
   padding: 0 var(--padding-14xl);
   margin-top: -35px;
-  color: var(--color-mediumslateblue-100);
+  color: var(--color-mediumslateblue);
 }
-.menuItemDashboard {
+.dashboardItem {
   align-self: stretch;
   flex: 1;
   flex-direction: column;
@@ -166,14 +158,12 @@
   position: relative;
   object-fit: cover;
 }
-.invoiceItemIconContainer {
-  height: 13.6px;
+.invoiceIconLabel {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-5xs-6) 0 0;
-  box-sizing: border-box;
 }
 .invoice1 {
   position: relative;
@@ -181,14 +171,6 @@
   font-weight: 600;
   display: inline-block;
   min-width: 51px;
-}
-.invoice {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 0 var(--padding-2xs-4);
-  gap: var(--gap-sm);
 }
 .iconlybolddocument {
   height: 26.4px;
@@ -198,14 +180,12 @@
   min-height: 26px;
 }
 .schedule1 {
-  text-decoration: none;
   position: relative;
   font-weight: 600;
-  color: inherit;
   display: inline-block;
   min-width: 68px;
 }
-.scheduleItemLabelContainer {
+.scheduleWrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -213,10 +193,8 @@
   padding: var(--padding-11xs) 0 0;
 }
 .calendar {
-  text-decoration: none;
   position: relative;
   font-weight: 600;
-  color: inherit;
   display: inline-block;
   min-width: 66px;
 }
@@ -246,7 +224,7 @@
   display: inline-block;
   min-width: 85px;
 }
-.menuIconLabels {
+.notificationWrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -274,16 +252,16 @@
   align-items: flex-start;
   gap: var(--gap-20xl-9);
   font-size: var(--font-size-base);
-  color: var(--color-gray-300);
+  color: var(--color-gray-500);
 }
 .collapsibleSideBar,
 .menuName,
-.sideBarTop {
+.sideBarContentParent {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.sideBarTop {
+.sideBarContentParent {
   align-self: stretch;
   flex: 1;
   align-items: flex-end;
@@ -292,7 +270,7 @@
 .collapsibleSideBar {
   height: 1024px;
   width: 285px;
-  background-color: var(--light-gohan);
+  background-color: var(--color-gray-400);
   overflow: hidden;
   flex-shrink: 0;
   align-items: flex-start;
@@ -301,11 +279,12 @@
   gap: var(--gap-363xl);
   text-align: left;
   font-size: var(--paragraph-ui-type-text-2xl-s-size);
-  color: var(--color-gray-200);
+  color: var(--color-white);
   font-family: var(--font-nunito);
 }
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1000px) {
   .collapsibleSideBar {
+    display: none;
     padding-top: var(--padding-14xl);
     padding-bottom: var(--padding-3xl);
     box-sizing: border-box;
@@ -318,7 +297,7 @@
   .menuName {
     gap: var(--gap-xl);
   }
-  .sideBarTop {
+  .sideBarContentParent {
     gap: var(--gap-6xl);
   }
   .collapsibleSideBar {

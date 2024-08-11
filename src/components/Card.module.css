@@ -7,7 +7,7 @@
   flex: 1;
   position: relative;
   border-radius: var(--br-xl);
-  background-color: var(--light-gohan);
+  background-color: var(--color-gray-400);
 }
 .card {
   width: 100%;

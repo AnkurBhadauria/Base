@@ -5,9 +5,9 @@ import styles from "./CollapsibleSideBar.module.css";
 const CollapsibleSideBar = ({ className = "" }) => {
   return (
     <div className={[styles.collapsibleSideBar, className].join(" ")}>
-      <div className={styles.sideBarTop}>
-        <div className={styles.sideBarTopLeft}>
-          <div className={styles.sideBarBrandContainer}>
+      <div className={styles.sideBarContentParent}>
+        <div className={styles.sideBarContent}>
+          <div className={styles.sideBarItems}>
             <div className={styles.logoAndCompany}>
               <img className={styles.subtractIcon} alt="" src="/subtract.svg" />
               <img
@@ -16,53 +16,41 @@ const CollapsibleSideBar = ({ className = "" }) => {
                 alt=""
                 src="/subtract.svg"
               />
-              <div className={styles.brandNameContainer}>
+              <div className={styles.logoContainer}>
                 <a className={styles.base}>Base</a>
               </div>
             </div>
-            <div className={styles.sideBarToggle}>
-              <img
-                className={styles.tablerIconLayoutSidebarLef}
-                loading="lazy"
-                alt=""
-                src="/tablericonlayoutsidebarleftexpand.svg"
-              />
-            </div>
+            <input className={styles.sideBarExpand} type="checkbox" />
           </div>
         </div>
         <div className={styles.menuName}>
-          <div className={styles.menuItemDashboard}>
+          <div className={styles.dashboardItem}>
             <div className={styles.dashboard}>
-              <div className={styles.dashboardItemIconContainer}>
-                <div className={styles.iconlyboldcategoryParent}>
+              <div className={styles.dashboardContent}>
+                <div className={styles.dashboardIconLabel}>
                   <img
                     className={styles.iconlyboldcategory}
                     loading="lazy"
                     alt=""
                     src="/iconlyboldcategory@2x.png"
                   />
-                  <div className={styles.dashboardItemLabelContainer}>
+                  <div className={styles.dashboardLabel}>
                     <a className={styles.dashboard1}>Dashboard</a>
                   </div>
                 </div>
               </div>
-              <div className={styles.separator} />
+              <div className={styles.itemDivider} />
             </div>
-            <div className={styles.menuItemAnalytics}>
+            <div className={styles.analyticsItem}>
               <div className={styles.analytics}>
-                <img
-                  className={styles.chartIcon}
-                  loading="lazy"
-                  alt=""
-                  src="/chart@2x.png"
-                />
-                <a className={styles.upload}>Upload</a>
+                <input className={styles.chart} type="checkbox" />
+                <div className={styles.upload}>Upload</div>
               </div>
             </div>
           </div>
-          <div className={styles.dashboardItemIconContainer}>
-            <div className={styles.invoice}>
-              <div className={styles.invoiceItemIconContainer}>
+          <div className={styles.dashboardContent}>
+            <div className={styles.dashboardIconLabel}>
+              <div className={styles.invoiceIconLabel}>
                 <img
                   className={styles.iconlyboldticket}
                   loading="lazy"
@@ -73,20 +61,20 @@ const CollapsibleSideBar = ({ className = "" }) => {
               <div className={styles.invoice1}>Invoice</div>
             </div>
           </div>
-          <div className={styles.dashboardItemIconContainer}>
-            <div className={styles.iconlyboldcategoryParent}>
+          <div className={styles.dashboardContent}>
+            <div className={styles.dashboardIconLabel}>
               <img
                 className={styles.iconlybolddocument}
                 loading="lazy"
                 alt=""
                 src="/iconlybolddocument@2x.png"
               />
-              <div className={styles.scheduleItemLabelContainer}>
-                <a className={styles.schedule1}>Schedule</a>
+              <div className={styles.scheduleWrapper}>
+                <div className={styles.schedule1}>Schedule</div>
               </div>
             </div>
           </div>
-          <div className={styles.dashboardItemIconContainer}>
+          <div className={styles.dashboardContent}>
             <div className={styles.frameWrapper}>
               <div className={styles.calendarParent}>
                 <img
@@ -97,27 +85,27 @@ const CollapsibleSideBar = ({ className = "" }) => {
                 />
                 <div className={styles.messagesWrapper}>
                   <div className={styles.frameWrapper}>
-                    <a className={styles.calendar}>Calendar</a>
+                    <div className={styles.calendar}>Calendar</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className={styles.dashboardItemIconContainer}>
-            <div className={styles.iconlyboldcategoryParent}>
+          <div className={styles.dashboardContent}>
+            <div className={styles.dashboardIconLabel}>
               <img
                 className={styles.iconlybolddocument}
                 loading="lazy"
                 alt=""
                 src="/iconlyboldnotification@2x.png"
               />
-              <div className={styles.menuIconLabels}>
+              <div className={styles.notificationWrapper}>
                 <div className={styles.notification1}>Notification</div>
               </div>
             </div>
           </div>
-          <div className={styles.dashboardItemIconContainer}>
-            <div className={styles.iconlyboldcategoryParent}>
+          <div className={styles.dashboardContent}>
+            <div className={styles.dashboardIconLabel}>
               <img
                 className={styles.iconlybolddocument}
                 loading="lazy"
@@ -131,7 +119,7 @@ const CollapsibleSideBar = ({ className = "" }) => {
           </div>
         </div>
       </div>
-      <div className={styles.dashboardItemIconContainer}>
+      <div className={styles.dashboardContent}>
         <ThemeSwitch />
       </div>
     </div>

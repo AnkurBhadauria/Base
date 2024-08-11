@@ -3,7 +3,7 @@
   flex: 1;
   position: relative;
   border-radius: var(--br-3xs);
-  background-color: var(--color-whitesmoke-100);
+  background-color: var(--color-gray-300);
   max-width: 100%;
 }
 .inputField {
